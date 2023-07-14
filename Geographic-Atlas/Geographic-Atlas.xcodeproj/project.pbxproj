@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60369441552662F78044E145 /* Pods_Geographic_Atlas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A13211D7FEEB198764DDF0 /* Pods_Geographic_Atlas.framework */; };
+		B96A1BF32A0F9D27001BB4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A1BF22A0F9D27001BB4B7 /* AppDelegate.swift */; };
+		B96A1BF52A0F9D27001BB4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A1BF42A0F9D27001BB4B7 /* SceneDelegate.swift */; };
+		B96A1BF72A0F9D27001BB4B7 /* CountriesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A1BF62A0F9D27001BB4B7 /* CountriesListController.swift */; };
+		B96A1BFA2A0F9D27001BB4B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96A1BF82A0F9D27001BB4B7 /* Main.storyboard */; };
+		B96A1BFC2A0F9D2A001BB4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96A1BFB2A0F9D2A001BB4B7 /* Assets.xcassets */; };
+		B96A1BFF2A0F9D2A001BB4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96A1BFD2A0F9D2A001BB4B7 /* LaunchScreen.storyboard */; };
+		B96A1C072A0FABA8001BB4B7 /* CountriesListControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A1C062A0FABA8001BB4B7 /* CountriesListControllerCell.swift */; };
+		B96A1C092A0FAD1A001BB4B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A1C082A0FAD1A001BB4B7 /* Constants.swift */; };
+		B9BB72722A1363A500EB438D /* JumpAvoidingFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB72712A1363A500EB438D /* JumpAvoidingFlowLayout.swift */; };
+		B9BB72762A13962E00EB438D /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB72752A13962E00EB438D /* CountryDetailsViewController.swift */; };
+		B9BB727A2A13E00F00EB438D /* CountryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB72792A13E00F00EB438D /* CountryDetailTableViewCell.swift */; };
+		B9BB72872A14C88900EB438D /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB72862A14C88800EB438D /* APICaller.swift */; };
+		B9BB72892A14C8A100EB438D /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB72882A14C8A100EB438D /* Countries.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		329ACCA0D25F578CF819728B /* Pods-Geographic-Atlas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geographic-Atlas.release.xcconfig"; path = "Target Support Files/Pods-Geographic-Atlas/Pods-Geographic-Atlas.release.xcconfig"; sourceTree = "<group>"; };
+		51A13211D7FEEB198764DDF0 /* Pods_Geographic_Atlas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geographic_Atlas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A23FBFB81A971EAAF822404 /* Pods-Geographic-Atlas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geographic-Atlas.debug.xcconfig"; path = "Target Support Files/Pods-Geographic-Atlas/Pods-Geographic-Atlas.debug.xcconfig"; sourceTree = "<group>"; };
+		B96A1BEF2A0F9D27001BB4B7 /* Geographic-Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geographic-Atlas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96A1BF22A0F9D27001BB4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B96A1BF42A0F9D27001BB4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B96A1BF62A0F9D27001BB4B7 /* CountriesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListController.swift; sourceTree = "<group>"; };
+		B96A1BF92A0F9D27001BB4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B96A1BFB2A0F9D2A001BB4B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B96A1BFE2A0F9D2A001BB4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B96A1C002A0F9D2A001BB4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96A1C062A0FABA8001BB4B7 /* CountriesListControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListControllerCell.swift; sourceTree = "<group>"; };
+		B96A1C082A0FAD1A001BB4B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9BB72712A1363A500EB438D /* JumpAvoidingFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAvoidingFlowLayout.swift; sourceTree = "<group>"; };
+		B9BB72752A13962E00EB438D /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		B9BB72792A13E00F00EB438D /* CountryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B9BB72862A14C88800EB438D /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		B9BB72882A14C8A100EB438D /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B96A1BEC2A0F9D27001BB4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60369441552662F78044E145 /* Pods_Geographic_Atlas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D3F33979164F4C635BDB24F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51A13211D7FEEB198764DDF0 /* Pods_Geographic_Atlas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		800D380BD00AD46742D74213 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A23FBFB81A971EAAF822404 /* Pods-Geographic-Atlas.debug.xcconfig */,
+				329ACCA0D25F578CF819728B /* Pods-Geographic-Atlas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B96A1BE62A0F9D27001BB4B7 = {
+			isa = PBXGroup;
+			children = (
+				B96A1BF12A0F9D27001BB4B7 /* Geographic-Atlas */,
+				B96A1BF02A0F9D27001BB4B7 /* Products */,
+				800D380BD00AD46742D74213 /* Pods */,
+				1D3F33979164F4C635BDB24F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B96A1BF02A0F9D27001BB4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B96A1BEF2A0F9D27001BB4B7 /* Geographic-Atlas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B96A1BF12A0F9D27001BB4B7 /* Geographic-Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				B9BB727D2A14311600EB438D /* Model */,
+				B9BB727E2A14311F00EB438D /* View */,
+				B9BB727F2A14314600EB438D /* Controller */,
+				B96A1BF22A0F9D27001BB4B7 /* AppDelegate.swift */,
+				B96A1BF42A0F9D27001BB4B7 /* SceneDelegate.swift */,
+				B96A1BF82A0F9D27001BB4B7 /* Main.storyboard */,
+				B96A1BFB2A0F9D2A001BB4B7 /* Assets.xcassets */,
+				B96A1BFD2A0F9D2A001BB4B7 /* LaunchScreen.storyboard */,
+				B96A1C002A0F9D2A001BB4B7 /* Info.plist */,
+			);
+			path = "Geographic-Atlas";
+			sourceTree = "<group>";
+		};
+		B9BB727D2A14311600EB438D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B96A1C082A0FAD1A001BB4B7 /* Constants.swift */,
+				B9BB72862A14C88800EB438D /* APICaller.swift */,
+				B9BB72882A14C8A100EB438D /* Countries.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9BB727E2A14311F00EB438D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B96A1C062A0FABA8001BB4B7 /* CountriesListControllerCell.swift */,
+				B9BB72792A13E00F00EB438D /* CountryDetailTableViewCell.swift */,
+				B9BB72712A1363A500EB438D /* JumpAvoidingFlowLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9BB727F2A14314600EB438D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9BB72752A13962E00EB438D /* CountryDetailsViewController.swift */,
+				B96A1BF62A0F9D27001BB4B7 /* CountriesListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B96A1BEE2A0F9D27001BB4B7 /* Geographic-Atlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96A1C032A0F9D2A001BB4B7 /* Build configuration list for PBXNativeTarget "Geographic-Atlas" */;
+			buildPhases = (
+				098CB73FC265AE036750F65F /* [CP] Check Pods Manifest.lock */,
+				B96A1BEB2A0F9D27001BB4B7 /* Sources */,
+				B96A1BEC2A0F9D27001BB4B7 /* Frameworks */,
+				B96A1BED2A0F9D27001BB4B7 /* Resources */,
+				924EA208A15C92A833287181 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geographic-Atlas";
+			productName = "Geographic-Atlas";
+			productReference = B96A1BEF2A0F9D27001BB4B7 /* Geographic-Atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B96A1BE72A0F9D27001BB4B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B96A1BEE2A0F9D27001BB4B7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B96A1BEA2A0F9D27001BB4B7 /* Build configuration list for PBXProject "Geographic-Atlas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B96A1BE62A0F9D27001BB4B7;
+			productRefGroup = B96A1BF02A0F9D27001BB4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B96A1BEE2A0F9D27001BB4B7 /* Geographic-Atlas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B96A1BED2A0F9D27001BB4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96A1BFF2A0F9D2A001BB4B7 /* LaunchScreen.storyboard in Resources */,
+				B96A1BFC2A0F9D2A001BB4B7 /* Assets.xcassets in Resources */,
+				B96A1BFA2A0F9D27001BB4B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		098CB73FC265AE036750F65F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Geographic-Atlas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		924EA208A15C92A833287181 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geographic-Atlas/Pods-Geographic-Atlas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geographic-Atlas/Pods-Geographic-Atlas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Geographic-Atlas/Pods-Geographic-Atlas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B96A1BEB2A0F9D27001BB4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96A1C092A0FAD1A001BB4B7 /* Constants.swift in Sources */,
+				B9BB72872A14C88900EB438D /* APICaller.swift in Sources */,
+				B9BB72892A14C8A100EB438D /* Countries.swift in Sources */,
+				B96A1BF72A0F9D27001BB4B7 /* CountriesListController.swift in Sources */,
+				B9BB72722A1363A500EB438D /* JumpAvoidingFlowLayout.swift in Sources */,
+				B9BB727A2A13E00F00EB438D /* CountryDetailTableViewCell.swift in Sources */,
+				B96A1BF32A0F9D27001BB4B7 /* AppDelegate.swift in Sources */,
+				B96A1BF52A0F9D27001BB4B7 /* SceneDelegate.swift in Sources */,
+				B96A1C072A0FABA8001BB4B7 /* CountriesListControllerCell.swift in Sources */,
+				B9BB72762A13962E00EB438D /* CountryDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B96A1BF82A0F9D27001BB4B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B96A1BF92A0F9D27001BB4B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B96A1BFD2A0F9D2A001BB4B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B96A1BFE2A0F9D2A001BB4B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B96A1C012A0F9D2A001BB4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B96A1C022A0F9D2A001BB4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B96A1C042A0F9D2A001BB4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A23FBFB81A971EAAF822404 /* Pods-Geographic-Atlas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Geographic-Atlas/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.balausa.Geographic-Atlas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B96A1C052A0F9D2A001BB4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 329ACCA0D25F578CF819728B /* Pods-Geographic-Atlas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Geographic-Atlas/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.balausa.Geographic-Atlas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B96A1BEA2A0F9D27001BB4B7 /* Build configuration list for PBXProject "Geographic-Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96A1C012A0F9D2A001BB4B7 /* Debug */,
+				B96A1C022A0F9D2A001BB4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B96A1C032A0F9D2A001BB4B7 /* Build configuration list for PBXNativeTarget "Geographic-Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96A1C042A0F9D2A001BB4B7 /* Debug */,
+				B96A1C052A0F9D2A001BB4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B96A1BE72A0F9D27001BB4B7 /* Project object */;
+}
